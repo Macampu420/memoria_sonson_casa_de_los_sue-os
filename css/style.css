@@ -10,15 +10,14 @@ body {
   min-height: 100vh;
 }
 
-body, html {
-  overflow-x: hidden;
-}
-
 .navbar {
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbarLogo {
