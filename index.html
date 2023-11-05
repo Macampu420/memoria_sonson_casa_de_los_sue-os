@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.cdnfonts.com/css/kenyan-coffee-2"
       rel="stylesheet"
@@ -13,7 +14,7 @@
       href="https://fonts.cdnfonts.com/css/heading-pro-trial"
       rel="stylesheet"
     />
-    <link href="https://fonts.cdnfonts.com/css/andor" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/andor" rel="stylesheet" />
     <title>Vite App</title>
   </head>
   <body class="">
@@ -22,7 +23,8 @@
         <img src="./images/logo.png" alt="" />
       </div>
     </nav>
-    <main class="col-sm-12 px-4">
+    <br />
+    <main class="container col-sm-12 px-4">
       <article class="col-11">
         <h1>Titulo del proyecto</h1>
 
@@ -38,12 +40,84 @@
         quod, accusamus tempora.
       </p>
 
-      <div class="flayerButonContainer col-10 mt-5">
-        <button class="flayerButon w-100 h-100">
-          <span>La chiva fantasma</span>
-        </button>
+      <article class="col-12 col-md-4 mx-auto" id="rowFlayerButtons">
+        <div class="flayerButonContainer mt-5">
+          <button id="1" class="flayerButon w-100 h-100">
+            <span>Descarga el texto final aquí</span>
+          </button>
+        </div>
+      </article>
+
+      <section class="row">
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="row">
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="row">
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-5 mx-auto" id="rowFlayerButtons">
+          <div class="flayerButonContainer mt-5">
+            <button id="1" class="flayerButon w-100 h-100">
+              <span>La chiva fantasma</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <div id="modal1" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-xl modalContainerImage">
+          <img src="./public/images/pendon1.png" alt="" class="modalImage" />
+        </div>
       </div>
     </main>
-    <script type="module" src="/main.js"></script>
+    <footer class="mainFooter mt-5 row">
+      <section class="col-12 col-md-8 text-center">
+        <h2 class="fs-5">La casa de los Sueños 2023</h2>
+        <p class="text-primary">Diseño: Anderson Cárdenas</p>
+        <p class="text-primary">Desarrollo de la web: Miguel Campuzano</p>
+      </section>
+      <div class="navbarLogo bg-primary col-12 col-md-4 mx-auto">
+        <img src="./images/logo.png" alt="" />
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

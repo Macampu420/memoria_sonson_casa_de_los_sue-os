@@ -1,3 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
 .navbar {
   height: 10vh;
   display: flex;
@@ -9,7 +25,6 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: #4caf50;
   border: 10px solid #3f1918;
   display: flex;
   justify-content: center;
@@ -41,6 +56,12 @@ main .abstract {
   height: 15vh;
   margin: 0 auto;
   transition: transform 0.5s;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Ajusta estos valores según tus necesidades */
+  border-radius: 20px;
+}
+
+.flayerButonContainer.hover{
+  transform: scale(1.05);
 }
 
 .flayerButon {
@@ -58,7 +79,7 @@ main .abstract {
 }
 
 .flayerButonContainer:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .bg-primary {
@@ -69,7 +90,6 @@ main .abstract {
 h1 {
   color: #c23b31;
   font-family: "Kenyan Coffee", sans-serif;
-  font-weight: lighter;
   letter-spacing: 3px;
 }
 
@@ -86,4 +106,39 @@ h2 {
   letter-spacing: 2px;
   color: #287233;
   font-size: 2.2rem;
+}
+
+.show {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImage {
+  object-fit: contain; /* Esto hará que la imagen se ajuste dentro del contenedor, manteniendo su aspecto */
+  width: 100%; /* Esto hará que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Esto hará que la imagen ocupe todo el alto del contenedor */
+}
+
+.mainFooter {
+  background-color: #3f1918;
+  color: #f5deb3;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.logo img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.text-primary {
+  color: #f5deb3 !important;
 }
