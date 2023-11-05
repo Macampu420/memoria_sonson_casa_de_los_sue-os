@@ -1,0 +1,89 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarLogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  border: 10px solid #3f1918;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarLogo img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main h1 {
+  font-size: 5rem;
+  text-align: left;
+  margin-top: 5rem;
+  line-height: 0.8;
+}
+
+main .abstract {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.flayerButonContainer {
+  height: 15vh;
+  margin: 0 auto;
+  transition: transform 1;
+}
+
+.flayerButon {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.flayerButonContainer:hover {
+  transform: scale(1.1);
+}
+
+.bg-primary {
+  background-color: #f5deb3 !important;
+}
+
+.titulo,
+h1 {
+  color: #c23b31;
+  font-family: "Kenyan Coffee", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.parrafo,
+p {
+  color: #3f1918;
+  font-family: "Heading Pro Trial", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-family: "Andor", sans-serif;
+  letter-spacing: 2px;
+  color: #287233;
+  font-size: 2.2rem;
+}
