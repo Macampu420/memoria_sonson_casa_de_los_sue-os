@@ -1,11 +1,20 @@
 import Modal from 'bootstrap/js/dist/modal';
 
 const handleFlayerButtonClick = (event) => {
-  if (event.target.nodeName !== 'BUTTON') return
+  let buttonId;
 
-  const buttonId = event.target.id;
+  if (event.target.nodeName === 'BUTTON') {
+    buttonId = event.target.id;
+  } else {
+    const button = event.target.closest('.flayerButonContainer').querySelector('button');
+    if (button) {
+      buttonId = button.id;
+    }
+  }
+
+  if (!buttonId) return;
+
   const modalContent = document.getElementById(`modal${buttonId}`);
-
   const modal = new Modal(modalContent);
   modal.show();
 }
